@@ -1,0 +1,43 @@
+<div class="background" style="min-height: 600px;">
+  <div class="gradient">
+    <div class="container">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="main-heading">About</h1>
+        </div>
+      </div>
+      <div style="margin: 0 auto;">
+      <div class="row mt-2 mb-2">
+        <div class="about col-md-6 col-lg-6" [ngClass]="routeAnimationsElements">
+          <mat-card>
+            <mat-card-title>
+              <p>{{ aboutItem.name }}</p>
+            </mat-card-title>
+            <mat-card-subtitle>
+              <p>{{ aboutItem.founder }}</p>
+              <p>Year: {{ aboutItem.founded }}</p>
+            </mat-card-subtitle>
+            <mat-card-content>
+            <p><span>Headquarters: </span>{{ aboutItem.headquarters.address }} {{ aboutItem.headquarters.city }} {{ aboutItem.headquarters.state }}</p>
+            <p><span>CEO:</span> {{ aboutItem.ceo }}</p>
+            <p><span>COO:</span> {{ aboutItem.coo }}</p>
+            <p class="desc"><span>Summary:</span><br>{{ aboutItem.summary }}</p>
+            </mat-card-content>
+            <mat-card-actions>
+              <a mat-button>
+                <fa-icon icon="book"></fa-icon>
+              </a>
+              <a mat-button target="_blank">
+                <fa-icon></fa-icon>
+              </a>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
